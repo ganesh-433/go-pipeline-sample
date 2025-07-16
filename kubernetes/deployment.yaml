@@ -16,7 +16,6 @@ spec:
     spec:
       containers:
       - name: go-app-container
-        # Harness Expression for the image from CI!
-        image: <+artifact.image>
+        image: ganesh243/go-pipeline-sample:latest
         ports:
         - containerPort: 8080
